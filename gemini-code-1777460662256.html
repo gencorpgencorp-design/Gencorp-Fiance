@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gencorp Star Money Solutions Private Limited | Your Financial Friend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        :root {
+            --brand-purple: #5b3fa1;
+            --brand-orange: #f58220;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow-x: hidden; }
+        .bg-brand-purple { background-color: var(--brand-purple); }
+        .text-brand-purple { color: var(--brand-purple); }
+        .border-brand-orange { border-color: var(--brand-orange); }
+        .loan-card { transition: all 0.4s ease; border: 1px solid #f1f1f1; border-radius: 2rem; overflow: hidden; background: white;}
+        .loan-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(91, 63, 161, 0.2); z-index: 10; border-color: var(--brand-orange); }
+        .hero-gradient { background: linear-gradient(135deg, #ffffff 0%, #f3f0ff 100%); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 py-3">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <!-- LOGO PATH UPDATED -->
+                <img src="./images/image_a82b32.jpg" alt="Gencorp Logo" class="h-16 animate__animated animate__fadeInLeft">
+                <span class="font-black text-brand-purple hidden md:block leading-tight">GENCORP STAR MONEY<br><small class="text-gray-500 tracking-tighter">SOLUTIONS PVT LTD</small></span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/gencorp_finance/" target="_blank" class="text-pink-600 text-xl hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61578504698789" target="_blank" class="text-blue-700 text-xl hover:scale-110 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@VichaarSetu8080" target="_blank" class="text-red-600 text-xl hover:scale-110 transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/919310608680" class="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg hover:bg-green-600 transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient py-16 md:py-24 animate__animated animate__fadeIn">
+        <div class="container mx-auto px-6 text-center">
+            <!-- HERO LOGO UPDATED -->
+            <img src="./images/image_a82b32.jpg" alt="Logo" class="h-40 mx-auto mb-8 drop-shadow-xl animate__animated animate__pulse animate__infinite">
+            <h1 class="text-4xl md:text-7xl font-black text-brand-purple mb-4 uppercase tracking-tight">
+                Gencorp Star Money <br>
+                <span class="text-brand-orange">Solutions Private Limited</span>
+            </h1>
+            <p class="text-xl text-gray-600 font-semibold mb-8 italic">"Your Financial Friend..."</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#loans" class="bg-brand-purple text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-opacity-90 transition transform hover:-translate-y-1">Explore Loans</a>
+                <a href="#about" class="bg-white text-brand-purple border-2 border-brand-purple px-8 py-4 rounded-xl font-bold hover:bg-brand-purple hover:text-white transition transform hover:-translate-y-1">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Company Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- ABOUT IMAGE (Maintained from Unsplash for high quality, or change to ./images/photo.jpg if needed) -->
+                <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80" alt="Finance Growth" class="rounded-3xl shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-4xl font-black text-brand-purple mb-6 uppercase">About Our Company</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    Gencorp Star Money Solutions Private Limited is a premier financial consultancy firm dedicated to bridging the gap between your dreams and capital. We provide expert advice and seamless loan processing for individuals and businesses across India.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-2xl border-l-4 border-brand-orange">
+                        <h4 class="font-bold text-brand-purple">Mission</h4>
+                        <p class="text-sm text-gray-500">To provide transparent and fast financial solutions to every citizen.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl border-l-4 border-brand-orange">
+                        <h4 class="font-bold text-brand-purple">Vision</h4>
+                        <p class="text-sm text-gray-500">To be India's most trusted "Financial Friend" through innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Services Section -->
+    <section id="loans" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-brand-purple uppercase">Our Premium Loan Services</h2>
+                <p class="text-gray-500 font-medium">Tailored financial products to suit every need</p>
+                <div class="h-1 w-20 bg-brand-orange mx-auto mt-4"></div>
+            </div>
+
+            <div id="loan-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Javascript will populate this with images and content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-brand-purple rounded-[3rem] p-10 md:p-20 text-white shadow-2xl grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-black mb-6 uppercase">Why Us? <br><span class="text-brand-orange">Market Comparison</span></h2>
+                    <p class="mb-8 opacity-90">We offer significantly lower interest rates and higher approval chances compared to traditional banking market standards.</p>
+                    <div class="bg-white p-6 rounded-3xl shadow-inner">
+                        <canvas id="rateChart"></canvas>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brand-orange p-3 rounded-xl"><i class="fas fa-bolt text-white"></i></div>
+                        <div><h4 class="font-bold text-xl">Instant Approval</h4><p class="text-sm opacity-80">Get loan sanction within 24-48 working hours.</p></div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brand-orange p-3 rounded-xl"><i class="fas fa-lock text-white"></i></div>
+                        <div><h4 class="font-bold text-xl">Secure Process</h4><p class="text-sm opacity-80">100% data privacy and transparent documentation.</p></div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brand-orange p-3 rounded-xl"><i class="fas fa-map-marker-alt text-white"></i></div>
+                        <div><h4 class="font-bold text-xl">Pan India</h4><p class="text-sm opacity-80">Serving customers across all states and cities in India.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+            <div class="col-span-1 md:col-span-2">
+                <!-- FOOTER LOGO UPDATED -->
+                <img src="./images/image_a82b32.jpg" alt="Logo" class="h-16 mb-6 brightness-125">
+                <h3 class="text-2xl font-black mb-4">GENCORP STAR MONEY SOLUTIONS PVT LTD</h3>
+                <p class="text-gray-400 max-w-sm">Providing financial freedom through smart lending and expert advisory services since 2026.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-orange mb-6 uppercase tracking-widest">Connect</h4>
+                <ul class="space-y-4 text-gray-400 font-medium">
+                    <li><i class="fab fa-whatsapp mr-2 text-green-500"></i> +91 9310608680</li>
+                    <li><i class="fas fa-phone mr-2 text-blue-400"></i> 011-44709908</li>
+                    <li><i class="fas fa-envelope mr-2 text-red-400"></i> info@gencorpfinance.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-brand-orange mb-6 uppercase tracking-widest">Office</h4>
+                <p class="text-gray-400">H. No. 2&3, 1st Floor, Block-A,<br>Majlis Park, Delhi-110033</p>
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61578504698789" class="text-2xl hover:text-brand-orange transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gencorp_finance/" class="text-2xl hover:text-brand-orange transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@VichaarSetu8080" class="text-2xl hover:text-brand-orange transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-gray-600 text-sm">
+            &copy; 2026 Gencorp Star Money Solutions Private Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Loan Detail Modal -->
+    <div id="loanModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden z-[100] flex items-center justify-center p-4">
+        <div class="bg-white rounded-[2rem] max-w-3xl w-full p-8 md:p-12 relative overflow-y-auto max-h-[90vh] animate__animated animate__zoomIn">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-brand-orange transition">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // LOAN IMAGES (Keeping high-quality Unsplash links for better look)
+        const loans = [
+            { id: 1, title: "Personal Loan", icon: "fa-user-tie", img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=400&q=80", rate: "10.25% onwards", why: "For medical emergencies, weddings, or debt consolidation.", docs: "PAN, Aadhaar, 3 Months Salary Slip, 6 Months Bank Statement.", credit: "700+ for best rates." },
+            { id: 2, title: "Home Loan", icon: "fa-home", img: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=400&q=80", rate: "8.50% onwards", why: "Purchase or construction of your dream house.", docs: "Property Docs, KYC, 2 Years ITR, Bank Statement.", credit: "750+ required." },
+            { id: 3, title: "Business Loan", icon: "fa-briefcase", img: "https://images.unsplash.com/photo-1664575196412-38019033f528?auto=format&fit=crop&w=400&q=80", rate: "11.0% onwards", why: "Working capital, expansion, or new inventory.", docs: "GST, MSME, 2 Years ITR, 12 Months Bank Statement.", credit: "650+ with healthy turnover." },
+            { id: 4, title: "MSME Loan", icon: "fa-industry", img: "https://images.unsplash.com/photo-1665686310934-8fab52b3821b?auto=format&fit=crop&w=400&q=80", rate: "Competitive ROI", why: "Government-backed schemes for small industries.", docs: "Udyam Aadhar, Business Proof, Bank Statement.", credit: "Good repayment history." },
+            { id: 5, title: "Education Loan", icon: "fa-graduation-cap", img: "https://images.unsplash.com/photo-1607237138185-eedd95602775?auto=format&fit=crop&w=400&q=80", rate: "9.0% onwards", why: "Higher studies in India or Abroad.", docs: "Admission Letter, Academic Record, Co-applicant KYC.", credit: "700+ (Co-applicant)." },
+            { id: 6, title: "Car/Vehicle Loan", icon: "fa-car", img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80", rate: "7.5% onwards", why: "Purchase of new or pre-owned vehicles.", docs: "Quotation, KYC, Income Proof.", credit: "650+." },
+            { id: 7, title: "Loan Against Property", icon: "fa-building", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80", rate: "9.5% onwards", why: "Unlock the value of your property for large needs.", docs: "Title Deed, Tax Receipts, KYC.", credit: "700+." },
+            { id: 8, title: "OD / CC Limit", icon: "fa-wallet", img: "https://images.unsplash.com/photo-1559526324-4b87b5e36e10?auto=format&fit=crop&w=400&q=80", rate: "Varies", why: "Flexible credit line for business operations.", docs: "Stock Audit, Financials, Bank Statement.", credit: "Solid business profile." }
+        ];
+
+        const grid = document.getElementById('loan-grid');
+        loans.forEach(loan => {
+            grid.innerHTML += `
+                <div onclick="showDetails(${loan.id})" class="loan-card animate__animated animate__fadeInUp cursor-pointer">
+                    <img src="${loan.img}" class="h-48 w-full object-cover" alt="${loan.title}">
+                    <div class="p-6 text-center">
+                        <i class="fas ${loan.icon} text-3xl text-brand-purple mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">${loan.title}</h3>
+                        <p class="text-brand-orange font-black text-sm uppercase">${loan.rate}</p>
+                    </div>
+                </div>
+            `;
+        });
+
+        function showDetails(id) {
+            const loan = loans.find(l => l.id === id);
+            document.getElementById('modalContent').innerHTML = `
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <img src="${loan.img}" class="rounded-2xl shadow-lg mb-4" alt="${loan.title}">
+                        <div class="bg-brand-purple text-white p-4 rounded-2xl text-center">
+                            <p class="text-xs uppercase opacity-80">Starting Rate</p>
+                            <p class="text-2xl font-black">${loan.rate}</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-black text-brand-purple mb-4 uppercase">${loan.title}</h2>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-brand-orange pl-4">
+                                <h4 class="font-bold text-gray-800 uppercase">Why take this loan?</h4>
+                                <p class="text-gray-600">${loan.why}</p>
+                            </div>
+                            <div class="border-l-4 border-brand-orange pl-4">
+                                <h4 class="font-bold text-gray-800 uppercase">Required Documents</h4>
+                                <p class="text-gray-600">${loan.docs}</p>
+                            </div>
+                            <div class="border-l-4 border-brand-orange pl-4">
+                                <h4 class="font-bold text-gray-800 uppercase">Credit Score Eligibility</h4>
+                                <p class="text-gray-600">${loan.credit}</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex gap-4">
+                            <a href="https://wa.me/919310608680" class="flex-1 bg-green-500 text-white text-center py-4 rounded-xl font-bold shadow-lg hover:bg-green-600 transition uppercase tracking-widest"><i class="fab fa-whatsapp mr-2"></i> Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('loanModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('loanModal').classList.add('hidden');
+        }
+
+        const ctx = document.getElementById('rateChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Personal', 'Business', 'Home', 'Car', 'Education'],
+                datasets: [{
+                    label: 'Other Banks Rate (%)',
+                    data: [14, 15, 10, 9, 11],
+                    borderColor: 'rgba(91, 63, 161, 0.3)',
+                    backgroundColor: 'rgba(91, 63, 161, 0.1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(91, 63, 161, 0.5)'
+                }, {
+                    label: 'Gencorp Rate (%)',
+                    data: [10.25, 11, 8.5, 7.5, 9],
+                    borderColor: '#f58220',
+                    backgroundColor: 'rgba(245, 130, 32, 0.4)',
+                    borderWidth: 3,
+                    pointBackgroundColor: '#f58220',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#f58220',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#5b3fa1', font: { weight: 'bold' } }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(91, 63, 161, 0.1)' },
+                        grid: { color: 'rgba(91, 63, 161, 0.1)' },
+                        pointLabels: { color: '#5b3fa1', font: { size: 12, weight: 'bold' } },
+                        ticks: { backdropColor: 'transparent', color: '#5b3fa1', font: { size: 10 } },
+                        suggestedMin: 5,
+                        suggestedMax: 16
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
